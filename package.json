@@ -16,7 +16,10 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "dev": "parcel ./index.html"
+    "dev": "parcel ./index.html",
+    "build": "parcel build ./index.html --public-url /goit-js-hw-12-countries/",
+    "deploy": "gh-pages -d dist",
+    "predeploy": "npm run build"
   },
   "repository": {
     "type": "git",
@@ -28,5 +31,5 @@
   "bugs": {
     "url": "https://github.com/Blossom0204/goit-js-hw-12-countries/issues"
   },
-  "homepage": "https://github.com/Blossom0204/goit-js-hw-12-countries#readme"
+  "homepage": "https://Blossom0204.github.io/goit-js-hw-12-countries/"
 }
