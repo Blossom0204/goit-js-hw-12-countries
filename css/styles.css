@@ -1,0 +1,23 @@
+.title-search {
+    text-align: center;
+    text-transform: uppercase;   
+}
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: rgb(60, 74, 100);
+    color: rgb(231, 231, 167);
+}
+.search-form {
+    display: flex;
+    justify-content:center ;
+}
+.search-form-input {
+  width: 450px;
+  height: 50px;
+  border: 3px solid rgba(226, 201, 119, 0.822);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(133, 230, 104, 0.15));
+  border-radius: 6px;
+  background-color: transparent;
+  padding-left: 16px;
+}
