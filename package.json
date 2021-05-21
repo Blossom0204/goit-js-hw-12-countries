@@ -5,8 +5,10 @@
   "main": "index.js",
   "homepage": "https://Blossom0204.github.io/goit-js-hw-12-countries/",
   "scripts": {
-    "dev": "parcel src/*.html",
-    "build": "parcel build ./index.html --public-url /goit-js-hw-12-countries/"
+    "dev": "parcel src/index.html",
+    "build": "parcel build ./index.html --public-url /goit-js-hw-12-countries/",
+    "deploy": "gh-pages -d dist",
+    "predeploy": "npm run build"
   },
   "repository": {
     "type": "git",
