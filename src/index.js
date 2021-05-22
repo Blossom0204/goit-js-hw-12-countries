@@ -1,11 +1,12 @@
 import './sass/main.scss';
 import './js/fetchCountries';
-
 import './css/styles.css';
+
 import debounce from 'lodash.debounce';
 import API from './js/fetchCountries';
 import countryCard from './templates/card.hbs';
 import countryList from './templates/list.hbs';
+
 import '@pnotify/core/dist/PNotify.css';
 import '@pnotify/core/dist/BrightTheme.css';
 import { error } from '@pnotify/core';
@@ -47,6 +48,6 @@ function renderCountryCard(country) {
     return;
   }
 
-  const markupCard = countryCard(...country);
+  const markupCard = countryCard(country);
   cardContainer.innerHTML = markupCard;
 }
