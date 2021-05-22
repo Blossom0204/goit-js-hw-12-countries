@@ -1,3 +1,6 @@
+import './sass/main.scss';
+import './js/fetchCountries';
+
 import './css/styles.css';
 import debounce from 'lodash.debounce';
 import API from './js/fetchCountries';

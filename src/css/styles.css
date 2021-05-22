@@ -1,15 +1,15 @@
 .title-search {
-  text-align: center;
-  text-transform: uppercase;
+    text-align: center;
+    text-transform: uppercase;   
 }
 body {
-  font-family: 'Roboto', sans-serif;
-  background-color: rgb(60, 74, 100);
-  color: rgb(231, 231, 167);
+    font-family: "Roboto", sans-serif;
+    background-color: rgb(60, 74, 100);
+    color: rgb(231, 231, 167);
 }
 .search-form {
-  display: flex;
-  justify-content: center;
+    display: flex;
+    justify-content:center ;
 }
 .search-form-input {
   width: 450px;
@@ -20,10 +20,4 @@ body {
   border-radius: 6px;
   background-color: transparent;
   padding-left: 16px;
-  color: rgb(231, 231, 167);
-}
-.list,
-.countries-list {
-  color: rgb(231, 231, 167);
-  line-height: 1.4;
 }
