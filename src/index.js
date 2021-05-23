@@ -18,14 +18,17 @@ searchForm.addEventListener('input', debounce(countrySearch, 500));
 
 function countrySearch(evt) {
   evt.preventDefault();
+  const searchQuery = searchForm.value;
 
-  const form = evt.target;
-  const searchQuery = form.value;
+  if (!searchQuery.trim()) {
+    cardContainer.innerHTML = '';
+    return;
+  }
 
   API.fetchCountry(searchQuery)
     .then(renderCountryCard)
     .catch(onFetchError)
-    .finally(() => form.reset);
+    .finally(() => searchForm.reset);
 }
 
 function onFetchError() {
